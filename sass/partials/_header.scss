@@ -10,8 +10,8 @@
 
   .cart {
     position: fixed;
-    top: 25px;
-    right: 25px;
+    top: 130px;
+    right: 5px;
     width: 50px;
     height: 50px;
     background: url(../images/basket-icon.png) center/cover no-repeat;
@@ -19,6 +19,11 @@
     transition: 0.3s;
     z-index: 3;
     opacity: 0.7;
+
+    @include screen(md) {
+      top: 25px;
+      right: 25px;
+    }
 
     &:hover {
       transform: scale(1.2, 1.2);
@@ -63,6 +68,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    color: #fff;
 
     @include screen(lg) {
       flex-direction: row;
@@ -141,7 +147,7 @@
     }
 
     label {
-      color: #ccc;
+      color: #fff;
       font-weight: bold;
     }
 
@@ -270,7 +276,7 @@
       margin-top: 15px;
       margin-bottom: 15px;
       font-family: $font-base;
-      color: #ccc;
+      color: #fff;
 
       input {
         width: 75%;

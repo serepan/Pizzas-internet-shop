@@ -3,8 +3,9 @@
   padding-bottom: 40px;
   font-family: $font-base;
   text-align: center;
+  color: #fff;
   background: url(https://truffle-assets.imgix.net/78222677-l.jpg) center/cover no-repeat;
-
+  
   @include screen (sm) {
     padding-top: 50px;
     padding-bottom: 50px;
